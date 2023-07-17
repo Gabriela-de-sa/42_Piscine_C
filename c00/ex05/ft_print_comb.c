@@ -6,7 +6,7 @@
 /*   By: gde-sa <gde-sa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/30 13:13:47 by gde-sa            #+#    #+#             */
-/*   Updated: 2023/06/04 15:24:48 by gde-sa           ###   ########.fr       */
+/*   Updated: 2023/07/17 13:00:39 by gde-sa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ void	ft_print_comb(void)
 	}
 }
 
-int	main(void)
-{
-	ft_print_comb();
-}
+// int	main(void)
+// {
+// 	ft_print_comb();
+// }

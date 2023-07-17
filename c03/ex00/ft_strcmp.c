@@ -1,43 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-sa <gde-sa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/06 11:24:13 by gde-sa            #+#    #+#             */
-/*   Updated: 2023/07/17 13:01:58 by gde-sa           ###   ########.fr       */
+/*   Created: 2023/06/11 13:16:26 by gde-sa            #+#    #+#             */
+/*   Updated: 2023/07/17 13:03:04 by gde-sa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-void	ft_rev_int_tab(int *tab, int size)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int		temp;
-	int		i;
+	unsigned int		i;
 
 	i = 0;
-	while (i < size)
+	while (s1[i] == s2[i])
 	{
-		temp = tab[i];
-		tab[i] = tab[size - 1];
-		tab[size - 1] = temp;
+		if (s1[i] == '\0' && s2[i] == '\0')
+		{
+			return (0);
+		}
 		i++;
-		size--;
 	}
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
 
 // #include <stdio.h>
+// #include <string.h>
+// #include <unistd.h>
 
-// int	main(void)
+// int main(void)
 // {
-// 	int	a[4] = {25, 50, 75, 100};
+// 	char	a[] = "gabi";
+// 	char	b[] = "gab";
+// 	char	c[] = "gabi";
+// 	char	d[] = "gab";
 
-// 	ft_rev_int_tab(&a, 4);
-// 	int i = 0;
-// 	while (i < 4)
-// 	{
-// 		printf("%d\n", a[i]);
-// 		i++;
-// 	}
+// 	printf("%d",ft_strcmp(a, b));
+// 	printf("\n%d",strcmp(c, d));
 // }

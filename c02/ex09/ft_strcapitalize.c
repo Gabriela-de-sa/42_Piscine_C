@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lfabiana <lfabiana@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gde-sa <gde-sa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/10 10:54:50 by gde-sa            #+#    #+#             */
-/*   Updated: 2023/06/13 17:20:56 by lfabiana         ###   ########.fr       */
+/*   Updated: 2023/07/17 13:02:46 by gde-sa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,12 +54,12 @@ char	*ft_strcapitalize(char *str)
 	return (str);
 }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int	main(void)
-{
-	char	string[] = "salut, comment tu vas ? 42mots quarante-deux";
+// int	main(void)
+// {
+// 	char	string[] = "salut, comment tu vas ? 42mots quarante-deux";
 
-	printf("%s", ft_strcapitalize(string));
-	return (0);
-}
+// 	printf("%s", ft_strcapitalize(string));
+// 	return (0);
+// }

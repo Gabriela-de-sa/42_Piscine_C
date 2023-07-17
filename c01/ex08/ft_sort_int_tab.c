@@ -6,7 +6,7 @@
 /*   By: gde-sa <gde-sa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 18:30:09 by gde-sa            #+#    #+#             */
-/*   Updated: 2023/06/11 13:29:57 by gde-sa           ###   ########.fr       */
+/*   Updated: 2023/07/17 13:02:08 by gde-sa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,23 +34,23 @@ void	ft_sort_int_tab(int *tab, int size)
 	}
 }
 
-int	main(void)
-{
-	int	a[5] = {-100, 50, 75, 100, 25};
-	int	i;
+// int	main(void)
+// {
+// 	int	a[5] = {-100, 50, 75, 100, 25};
+// 	int	i;
 
-	i = 0;
-	while (i < 5)
-	{
-		printf(" %d", a[i]);
-		i++;
-	}
-	ft_sort_int_tab(a, 5);
-	printf("\n");
-	i = 0;
-	while (i < 5)
-	{
-		printf(" %d", a[i]);
-		i++;
-	}
-}
+// 	i = 0;
+// 	while (i < 5)
+// 	{
+// 		printf(" %d", a[i]);
+// 		i++;
+// 	}
+// 	ft_sort_int_tab(a, 5);
+// 	printf("\n");
+// 	i = 0;
+// 	while (i < 5)
+// 	{
+// 		printf(" %d", a[i]);
+// 		i++;
+// 	}
+// }

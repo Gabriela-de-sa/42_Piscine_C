@@ -1,30 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gde-sa <gde-sa@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/29 19:36:34 by gde-sa            #+#    #+#             */
-/*   Updated: 2023/06/03 16:56:31 by gde-sa           ###   ########.fr       */
+/*   Created: 2023/06/12 17:06:02 by gde-sa            #+#    #+#             */
+/*   Updated: 2023/06/14 18:36:13 by gde-sa           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_alphabet(void)
+char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {
-	char	c;
+	unsigned int	i;
+	unsigned int	j;
 
-	c = 'a';
-	while (c <= 'z')
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		write(1, &c, 1);
-		++c;
+		i++;
 	}
+	j = 0;
+	while (src[j] != '\0' && j < nb)
+	{
+		dest[i + j] = src[j];
+		j++;
+	}
+	dest[i + j] = '\0';
+	return (dest);
 }
 
-/*int	main(void)
+/* #include <stdio.h>
+
+int main(void)
 {
-	ft_print_alphabet();
-}*/
+	char    c[] = "banana";
+	char    d[25] = "oi";
+
+	//strncat(d, c, 3);
+	ft_strncat(d, c, 3);
+	printf("%s", d);
+
+} */
